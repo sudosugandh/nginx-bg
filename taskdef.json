@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/td-app",
-          "awslogs-region": "eu-west-2",
+          "awslogs-group": "/ecs/app-td",
+          "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:457522136516:task-definition/td-app:1",
-  "family": "td-app",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:457522136516:task-definition/app-td:1",
+  "family": "app-td",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -121,7 +121,10 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "runtimePlatform": null,
+  "runtimePlatform": {
+    "operatingSystemFamily": "LINUX",
+    "cpuArchitecture": null
+  },
   "cpu": "512",
   "revision": 1,
   "status": "ACTIVE",
