@@ -10,7 +10,7 @@
         "secretOptions": null,
         "options": {
           "awslogs-group": "/ecs/td-app",
-          "awslogs-region": "ap-south-1",
+          "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -64,7 +64,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:222191613406:task-definition/td-app:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:222191613406:task-definition/td-app:1",
   "family": "td-app",
   "requiresAttributes": [
     {
