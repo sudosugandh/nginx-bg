@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/td-app",
-          "awslogs-region": "eu-west-2",
+          "awslogs-group": "/ecs/td",
+          "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -37,7 +37,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": <APP>,
+      "image": <PHALCON>,
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -59,13 +59,13 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::222191613406:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::457522136516:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:222191613406:task-definition/td-app:1",
-  "family": "td-app",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:457522136516:task-definition/td:1",
+  "family": "td",
   "requiresAttributes": [
     {
       "targetId": null,
